@@ -1,0 +1,11 @@
+#! /bin/bash
+#
+# enda saavutused
+#
+echo "Kristofer Vasser" # väljastab nime ja perenime
+echo "IS117" # väljastab õppegrupi
+echo "Aine tundub norm" # väljastab minu tunded
+echo "Mulje on hea ja edasi jõuan hästi" #väljastab minu muljed ja edasijõudmise
+#
+# skripti lõpp
+
