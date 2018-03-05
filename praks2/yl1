@@ -2,8 +2,12 @@
 #
 # tervitusskript
 #
-echo -n "Tere, " # väljasta ilma reavahetuseta Tere,
-echo -n "User" # väljasta ilma reavahetuseta User
-echo "!" # väljasta ! ja tee reavahetus
+# skripti algus
 #
-# skjripti lõpp
+# echo "Tere User!"
+echo -n "Tere " # väljasta ilma reavahetuseta Tere,
+echo -n `who am i | cut -c1 | tr [:lower:] [:upper:]` # lõika esimene täht ja muuda suureks
+echo -n `who am i | cut -c2-` # löika kõik tähed alates 2-st
+echo "!"
+#
+# skripti lõpp
