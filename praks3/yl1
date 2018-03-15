@@ -4,5 +4,5 @@
 #
 date +"Today is %A, %B %m. %Y" # Väljastab kuupäeva
 date +"Time is %R" # Väljastab praeguse aja
-echo "Calendar of January 2015" # väljastab kalendri pealkirja
+echo "Calendar of" # väljastab kalendri pealkirja
 cal # Väljastab kalendri
