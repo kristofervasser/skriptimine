@@ -15,9 +15,10 @@ echo "Küpsiste suurus on $kypsised cm"
 echo -n "Sisesta, mitu küpsist on ühes pakis:"
 read pakis
 echo "Pakis on $pakis küpsist"
+
 #Tordi kihid
 echo -n "Sisesta, mitu kihti soovite tordile:"
 read kiht
-yhes_kihis=`expr $Kandik / $kypsised`
-echo "Tordile tuleb $yhes_kihis küpsist"
+yhes_kihis=`expr $Kandik / $kypsised \* $kiht / $pakis`
+echo "Tordile on vaja $yhes_kihis pakki küpsist"
 
