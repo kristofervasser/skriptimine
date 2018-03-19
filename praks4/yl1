@@ -1,0 +1,7 @@
+#!/bin/bash
+#
+#skript
+echo -n "Sisesta oma ees- ja perenimi: " # Skript võimalda väljutada nime ja perenime
+read eesnimi perenimi # väljastab nime ja perenime
+echo "Sinu eesnimi on $eesnimi ja perenimi on $perenimi" # toob välja sissetrükitud nime ja perenime
+#
