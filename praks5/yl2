@@ -4,6 +4,6 @@ echo -n "Sisesta külgede väärtused a, b ja c:" #sisesta parameetrid
 read a b c #loeb parameetried
 kyljed=`echo "scale=2; ($a+$b+$c) / 2" | bc` #arvutab parameetrid, liidab ja siis jagab 2-ga
 echo "külgede pikkused on $kyljed" # väljastab eelmise vastuse
-pindala=`echo "scale=2; ($kyljed * ($kyljed - $a) * ($kyljed - $b) * ($kyljed - $c))" | bc` # arvutab parameetrid mis said sisestatud, kasutades heroni valemit
+pindala=`echo "scale=2; sqrt ($kyljed * ($kyljed - $a) * ($kyljed - $b) * ($kyljed - $c))" | bc` # arvutab parameetrid mis said sisestatud, kasutades heroni valemit
 echo "pindala on $pindala" #väljastab vastuse 
 #
