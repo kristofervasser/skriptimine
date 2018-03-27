@@ -1,0 +1,17 @@
+#!/bin/bash
+#
+if test $# -ne 1;
+then
+	echo "Kuidas kasutada:"
+	echo "$0 ja siis lisada arv, näiteks ./paarsus 3"
+else
+	jaak=$(($1 % 2))
+	if test $jaak -eq 0
+	then
+	echo "Antud arv on paaris"
+	else 
+	echo "Antud arv on paaritu"
+	fi
+fi
+
+
