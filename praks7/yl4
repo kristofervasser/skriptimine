@@ -1,0 +1,26 @@
+#!/bin/bash
+#
+aeg=`date | cut -c12-13`
+if [ $aeg -ge 6 -a $aeg -lt 12 ]; then
+tervitus="Tere hommikust"
+
+	elif [ $aeg -ge 12 -a $aeg -lt 18 ]; then
+	tervitus="Tere päevast"
+
+		elif [ $aeg -ge 18 -a $aeg -lt 22 ]; then
+		tervitus="Tere õhtust"
+			
+			elif [ $aeg -ge 22 -a $aeg -le 24 ]; then
+			tervitus="Head ööd"
+
+				elif [ $aeg -gt 0 -a $aeg -lt 6 ]; then
+				tervitus="Head ööd"
+
+else
+				tervitus="Vigane sisend"
+fi
+
+echo
+echo  -n "$tervitus"
+echo  `who am i | cut -f1 -d " "`
+
