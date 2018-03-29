@@ -1,0 +1,29 @@
+#!/bin/bash
+#
+echo -n "Sisesta kellaaeg:"
+read a
+if [ $a -ge 6 -a $a -le 12 ]; then
+echo "Tere hommikust!"
+
+else
+	if [ $a -ge 12 -a $a -le 18 ]; then
+	echo "Tere päevast!"
+
+else
+		if [ $a -ge 18 -a $a -le 22 ]; then
+		echo "Tere õhtust!"
+
+else
+			if [ $a -ge 22 -a $a -le 24 ]; then
+			echo "Head ööd!"
+
+				elif [ $a -ge 0 -a $a -lt 6 ]; then
+				echo "Head ööd!"
+
+else
+				echo "vigane sisend"
+				
+			fi
+		fi
+	fi
+fi
