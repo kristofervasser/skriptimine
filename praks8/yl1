@@ -1,0 +1,11 @@
+#!/bin/bash
+#
+arvud="1 2 3 4 5 6 7 8 9 10"
+summa=0
+for arv in $arvud
+do
+	if [ $(($arv % 2 )) -eq 0 ]; then
+	summa=$(($summa + $arv))
+	fi
+done
+echo "10 esimese paarisarvu summa on: $summa"
